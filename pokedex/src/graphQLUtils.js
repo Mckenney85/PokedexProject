@@ -48,7 +48,7 @@ const fetchPokemonOfCertainTypeOperationsDoc = (pokemonType) => `
     }
 `
 
-function fetchPokemonOfCertainType(pokemonmType) {
+function fetchPokemonOfCertainType(pokemonType) {
     return fetchGraphQL(
         fetchPokemonOfCertainTypeOperationsDoc(pokemonType),
         'fetchPokemonOfCertainType',
@@ -142,7 +142,7 @@ const fetchPokemonOfCertainTypeAndByCapturedStatusOperationsDoc = ({
     }
 `
 
-export function updatePokemonCaturedStatus(pokemonId, newIsCapturedValue) {
+export function updatePokemonCapturedStatus(pokemonId, newIsCapturedValue) {
     return fetchGraphQL(
         updatePokemonCapturedStatusOperationsDoc(pokemonId, newIsCapturedValue),
         'updatePokemonCapturedStatus',

@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import Switch from '@material-ui/core/Switch'
 
-import { updatePokemonCaturedStatus } from './graphQLUtils'
+import { updatePokemonCapturedStatus } from './graphQLUtils'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export function PokemonCard({ pokemon, fetchPokedexData}) {
-    const Classes = useStyles()
+    const classes = useStyles()
 
     const handleCapturedChange = async () => {
         const { errors } = await updatePokemonCapturedStatus(

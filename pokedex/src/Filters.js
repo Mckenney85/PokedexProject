@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     }
 
     const handleCaptureChange = (event) => {
-        setPokemonCapturedFilter(event.target.value)
+        setCapturedFilter(event.target.value)
     }
 
     return(
